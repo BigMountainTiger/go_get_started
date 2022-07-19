@@ -39,19 +39,19 @@ func load_auth_key() bool {
 		return false
 	}
 
-	auth_key_set = set
+	auth_key_set = *set
 
 	return true
 }
 
 func auth_key() (string, error) {
 
-	key, ok := auth_key_set.LookupKeyID("ABCD")
-	if !ok {
+	keys := auth_key_set.LookupKeyID("ABCD")
+	if len(keys) == 0 {
 		return "", errors.New("key is not found")
 	}
 
-	log.Println(key)
+	log.Println(keys[0])
 
 	return "OK", nil
 }
@@ -63,12 +63,16 @@ func get_key(token *jwt.Token) (interface{}, error) {
 		return nil, errors.New("jwt token has no kid")
 	}
 
-	key, ok := auth_key_set.LookupKeyID(kid)
-	if !ok {
+	keys := auth_key_set.LookupKeyID(kid)
+	if len(keys) == 0 {
 		return nil, errors.New("jwk is not found")
 	}
 
-	log.Println(key)
+	key, err := keys[0].Materialize()
+	if err != nil {
+		return nil, err
+	}
+
 	return key, nil
 }
 
