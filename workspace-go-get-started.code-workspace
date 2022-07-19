@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": ".script"
+		},
+		{
+			"path": "note"
+		},
+		{
+			"path": "dynamo_client_example"
+		},
+		{
+			"path": "web_service_gin"
+		},
+		{
+			"path": "http_client_example"
+		}
+	],
+	"settings": {}
+}

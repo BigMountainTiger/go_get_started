@@ -1,0 +1,6 @@
+#!/bin/bash
+
+source .script/environment-variables/variables
+cd web_service_gin
+
+nodemon --watch './**/*.go' --signal SIGTERM --exec go run *.go
