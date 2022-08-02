@@ -1,0 +1,4 @@
+https://github.com/spf13/cobra
+https://cobra.dev/
+https://pkg.go.dev/github.com/spf13/cobra
+https://github.com/spf13/cobra-cli

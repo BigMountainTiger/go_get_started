@@ -1,0 +1,21 @@
+#!/bin/bash
+
+source .script/environment-variables/variables
+cd web_service_gin
+
+rm ./.out/start
+go build -o ./.out/start
+
+TAG=1.0.0
+REPOSITORY=go-web-gin
+
+docker build -t ${REPOSITORY}:${TAG} -f Dockerfile .
+
+docker run -p 8000:8000 --rm \
+    -v $HOME/.aws:/root/.aws:ro \
+    -e AUTH_URL="${AUTH_URL}" \
+    -e CLIENT_ID="${CLIENT_ID}" \
+    -e SCOPE="${SCOPE}" \
+    -e PORT=8080 \
+    -p 8080:8080 \
+    ${REPOSITORY}:${TAG}

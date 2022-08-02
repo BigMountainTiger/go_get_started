@@ -1,0 +1,9 @@
+#!/bin/bash
+
+source .script/environment-variables/variables
+
+export PORT=8080
+cd web_service_gin
+
+nodemon --watch './**/*.go' --signal SIGTERM --exec go run *.go
+# web_service_gin

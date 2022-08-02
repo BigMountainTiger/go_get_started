@@ -1,0 +1,5 @@
+#!/bin/bash
+
+git reset --soft HEAD~
+git add-commit -m "Updated the go_get_started"
+git push -f

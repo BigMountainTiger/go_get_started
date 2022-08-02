@@ -1,0 +1,23 @@
+#!/bin/bash
+
+INPUT_TARGET=$(echo ${1} | tr '[:upper:]' '[:lower:]')
+
+OS_OPTIONS="|android|darwin|dragonfly|freebsd|linux|nacl|netbsd|openbsd|plan9|solaris|windows|"
+if [[ ${OS_OPTIONS} == *"|${INPUT_TARGET}|"* ]]; then
+  TARGET=${INPUT_TARGET}
+else
+  echo "Unknown build target ${INPUT_TARGET}, default to linux"
+  TARGET="linux"
+fi
+
+OUT=".build/${TARGET}/poc"
+if [ "$TARGET" = "windows" ]
+then
+  OUT="${OUT}.exe"
+fi
+
+echo "Building againt ${TARGET} to the file ${OUT}"
+
+GOOS=${TARGET} GOARCH=amd64 go build -o ${OUT} .
+
+echo "Done"

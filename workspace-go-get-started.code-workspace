@@ -1,0 +1,35 @@
+{
+	"folders": [
+		{
+			"path": ".script"
+		},
+		{
+			"path": "note"
+		},
+		{
+			"path": "dynamo_client_example"
+		},
+		{
+			"path": "web_service_gin"
+		},
+		{
+			"path": "http_client_example"
+		},
+		{
+			"path": "cli_cobra_example"
+		},
+		{
+			"path": "web_fasthttp"
+		},
+		{
+			"path": "defer_panic_recover_example"
+		},
+		{
+			"path": "test_example"
+		},
+		{
+			"path": "interface_example"
+		}
+	],
+	"settings": {}
+}

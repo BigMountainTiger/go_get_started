@@ -1,0 +1,6 @@
+#!/bin/bash
+
+source .script/environment-variables/variables
+cd http_client_example
+
+go run .
