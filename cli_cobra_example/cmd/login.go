@@ -1,7 +1,6 @@
 package cmd
 
 import (
-	"fmt"
 	"log"
 
 	"github.com/spf13/cobra"
@@ -18,7 +17,7 @@ var loginCmd = &cobra.Command{
 		password, _ := cmd.Flags().GetString("password")
 
 		if password == "" {
-			fmt.Println("Password is required")
+			cmd.Println("Password is required")
 		}
 
 		err := utils.Save_file_to_home("login", []byte(user))
@@ -26,7 +25,7 @@ var loginCmd = &cobra.Command{
 			log.Fatal(err)
 		}
 
-		fmt.Println("Welcome", user)
+		cmd.Println("Welcome", user)
 	},
 }
 

@@ -10,6 +10,8 @@ import (
 	"song.com/go_get_started/cli_cobra_example/utils"
 )
 
+var appid string
+
 var geoCmd = &cobra.Command{
 	Use:   "geo city-name",
 	Short: "lookup geo location information by city, state, and county",
@@ -22,7 +24,6 @@ var geoCmd = &cobra.Command{
 		county, _ := cmd.Flags().GetString("county")
 		limit, _ := cmd.Flags().GetInt("limit")
 
-		appid := "98d293cd938d3fa5d0c6d3bda8291882"
 		template := "http://api.openweathermap.org/geo/1.0/direct?q=%s,%s,%s&limit=%v&appid=%s"
 		url := fmt.Sprintf(template, city, state, county, limit, appid)
 
@@ -42,7 +43,7 @@ var geoCmd = &cobra.Command{
 			log.Fatalln(err)
 		}
 
-		fmt.Println(r)
+		cmd.Println(r)
 
 	},
 }

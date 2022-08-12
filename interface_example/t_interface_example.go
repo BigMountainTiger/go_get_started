@@ -39,7 +39,7 @@ func interface_example() {
 	var a IAbser
 
 	f := IMyFloat(-math.Sqrt2)
-	v := Vertex{3, 4}
+	v := IVertex{3, 4}
 
 	a = f
 	fmt.Println(a.Abs())
@@ -51,6 +51,7 @@ func interface_example() {
 	// only a pointer can be assigned to an interfacce
 	// the following wont compile
 	// a = v
+	// fmt.Println(a.Abs())
 
 	a = &v
 	fmt.Println(a.Abs())

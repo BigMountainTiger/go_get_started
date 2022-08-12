@@ -3,7 +3,7 @@ package weather
 import (
 	"bytes"
 	"fmt"
-	"io/ioutil"
+	"io"
 	"log"
 	"net/http"
 
@@ -36,13 +36,13 @@ var echoCmd = &cobra.Command{
 
 		defer resp.Body.Close()
 
-		body, err := ioutil.ReadAll(resp.Body)
+		body, err := io.ReadAll(resp.Body)
 		if err != nil {
 			log.Fatal(err)
 		}
 
-		fmt.Println("Response received:")
-		fmt.Println(string(body))
+		cmd.Println("Response received:")
+		cmd.Println(string(body))
 	},
 }
 

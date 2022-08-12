@@ -1,3 +1,6 @@
 #!/bin/bash
 
-go run . "$@"
+source .scripts/environment-variables/variables
+
+# This is to set the variable in the compile time
+go run -ldflags "-X song.com/go_get_started/cli_cobra_example/cmd/weather.appid=$APPID" . "$@"

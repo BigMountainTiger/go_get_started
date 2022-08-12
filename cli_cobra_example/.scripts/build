@@ -18,6 +18,9 @@ fi
 
 echo "Building againt ${TARGET} to the file ${OUT}"
 
-GOOS=${TARGET} GOARCH=amd64 go build -o ${OUT} .
+source .scripts/environment-variables/variables
+
+GOOS=${TARGET} GOARCH=amd64 go build -ldflags "-X song.com/go_get_started/cli_cobra_example/cmd/weather.appid=$APPID" \
+  -o ${OUT} .
 
 echo "Done"

@@ -1,7 +1,6 @@
 package cmd
 
 import (
-	"fmt"
 	"log"
 
 	"github.com/spf13/cobra"
@@ -26,7 +25,7 @@ var logoutCmd = &cobra.Command{
 			log.Fatal(err)
 		}
 
-		fmt.Println("Bye", string(data))
-		fmt.Println("You are logged out")
+		cmd.Println("Bye", string(data))
+		cmd.Println("You are logged out")
 	},
 }

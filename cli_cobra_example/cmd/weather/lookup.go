@@ -103,7 +103,7 @@ var lookupCmd = &cobra.Command{
 			log.Fatalln(err)
 		}
 
-		fmt.Println(string(result))
+		cmd.Println(string(result))
 
 	},
 }

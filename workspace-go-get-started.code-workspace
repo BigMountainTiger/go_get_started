@@ -32,6 +32,15 @@
 		},
 		{
 			"path": "goroutine_example"
+		},
+		{
+			"path": "garbage_collection_example"
+		},
+		{
+			"path": "launch_browser"
+		},
+		{
+			"path": "msitools_example"
 		}
 	],
 	"settings": {}

@@ -1,7 +1,6 @@
 package cmd
 
 import (
-	"fmt"
 	"os"
 
 	"github.com/spf13/cobra"
@@ -19,7 +18,7 @@ func Execute() {
 	if len(args) == 2 {
 		arg0 := args[1]
 		if arg0 == "-v" || arg0 == "--version" {
-			fmt.Println("poc cli version 1.0.0")
+			RootCmd.Println("poc cli version 1.0.0")
 			os.Exit(0)
 		}
 	}
