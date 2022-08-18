@@ -1,11 +1,16 @@
 #!/bin/bash
 
 SHARED="/media/sf_Shared-folder"
+SOURCE="bin"
 DEST="${SHARED}/build"
 
-rm -Rf ${DEST}
+if [ ! -d "${SOURCE}" ]; then
+  echo "${SOURCE} directory does exist, no file to copy"
+  exit 1
+fi
 
-cp -R .build ${DEST}
+rm -Rf ${DEST}
+cp -R ${SOURCE} ${DEST}
 
 echo "Copied the build to ${DEST}"
 echo

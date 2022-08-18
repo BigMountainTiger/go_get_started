@@ -1,0 +1,3 @@
+#!/bin/bash
+
+wixl msi.wxs -v -o ./bin/windows/msitools_example.msi

@@ -1,0 +1,5 @@
+https://karthikkaranth.me/blog/calling-c-code-from-go/
+https://pkg.go.dev/cmd/cgo
+
+
+https://stackoverflow.com/questions/28881072/how-to-add-c-files-in-a-subdirectory-as-part-of-go-build-by-using-pseudo-cgo-dir

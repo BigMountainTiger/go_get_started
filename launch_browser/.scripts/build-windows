@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# sudo apt-get install gcc-mingw-w64
+# sudo apt install gcc-mingw-w64-x86-64
+# sudo apt install g++-mingw-w64-x86-64
+
+# https://golangexample.com/webview-external-dependency-poc-for-go-windows/
+# Still not working
+
+export CGO_CXXFLAGS="-I /home/song/Sandbox/go-example/src/song.com/go_get_started/launch_browser/microsoft/build/native/include"
+export CGO_LDFLAGS="-L /home/song/Sandbox/go-example/src/song.com/go_get_started/launch_browser/microsoft/build/native/x64"
+
+OUT=".build/windows/webview"
+
+GOOS=windows GOARCH=amd64 CGO_ENABLED=1 \
+  CC=x86_64-w64-mingw32-gcc CXX=x86_64-w64-mingw32-g++ \
+  go build -ldflags "-H windowsgui" \
+  -o ${OUT} .
+
+echo "Done"
+

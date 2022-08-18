@@ -1,41 +1,25 @@
 package main
 
 import (
-	"fmt"
-	"log"
-	"os/exec"
-	"runtime"
-	"time"
+	"os"
+
+	"github.com/webview/webview"
 )
 
-var url string = "https://www.google.com"
-
-func launch(command string) {
-
-	cmd := exec.Command(command, url)
-	err := cmd.Start()
-	if err != nil {
-		log.Fatal(err)
-	}
-
-	time.Sleep(5 * time.Second)
-	fmt.Println(cmd.Process.Pid)
-
-}
-
 func main() {
-	os := runtime.GOOS
 
-	switch os {
-	case "linux":
-		launch("xdg-open")
-	case "windows":
-		launch("start")
-	case "darwin":
-		launch("open")
-	default:
-		fmt.Printf("%s.\n", os)
-	}
+	os.Setenv("JSC_SIGNAL_FOR_GC", "20")
 
-	fmt.Println("It does not look to have a all ideal solution at this time")
+	debug := false
+	w := webview.New(debug)
+	defer w.Destroy()
+
+	w.SetSize(600, 700, 0)
+
+	w.SetTitle("Minimal webview example")
+	w.Navigate("https://www.google.com")
+	w.Run()
+
+	// time.Sleep(1 * time.Minute)
+
 }

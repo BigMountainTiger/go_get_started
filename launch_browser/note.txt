@@ -1,0 +1,2 @@
+https://github.com/webview/webview
+https://reza-ta.medium.com/golang-create-a-web-view-app-for-any-platform-54917dea397

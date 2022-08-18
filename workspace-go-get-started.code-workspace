@@ -1,47 +1,73 @@
 {
 	"folders": [
 		{
+			"name": ".script",
 			"path": ".script"
 		},
 		{
+			"name": "note",
 			"path": "note"
 		},
 		{
-			"path": "dynamo_client_example"
+			"name": "calling_c_code",
+			"path": "calling_c_code"
 		},
 		{
-			"path": "web_service_gin"
-		},
-		{
-			"path": "http_client_example"
-		},
-		{
+			"name": "cli_cobra_example",
 			"path": "cli_cobra_example"
 		},
 		{
+			"name": "dynamo_client_example",
+			"path": "dynamo_client_example"
+		},
+		{
+			"name": "web_service_gin",
+			"path": "web_service_gin"
+		},
+		{
+			"name": "http_client_example",
+			"path": "http_client_example"
+		},
+		{
+			"name": "web_fasthttp",
 			"path": "web_fasthttp"
 		},
 		{
+			"name": "defer_panic_recover_example",
 			"path": "defer_panic_recover_example"
 		},
 		{
+			"name": "test_example",
 			"path": "test_example"
 		},
 		{
+			"name": "interface_example",
 			"path": "interface_example"
 		},
 		{
+			"name": "goroutine_example",
 			"path": "goroutine_example"
 		},
 		{
+			"name": "garbage_collection_example",
 			"path": "garbage_collection_example"
 		},
 		{
+			"name": "launch_browser",
 			"path": "launch_browser"
 		},
 		{
+			"name": "msitools_example",
 			"path": "msitools_example"
+		},
+		{
+			"path": "oauth2_example"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"files.exclude": {
+			"**/.git": true,
+			"**/bin": true
+		}
+	}
 }
