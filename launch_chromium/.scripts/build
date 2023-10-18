@@ -1,0 +1,31 @@
+#!/bin/bash
+
+EXE_NAME="launch_chromium"
+INPUT_TARGET=$(echo ${1} | tr '[:upper:]' '[:lower:]')
+
+OS_OPTIONS="|android|darwin|dragonfly|freebsd|linux|nacl|netbsd|openbsd|plan9|solaris|windows|"
+if [[ ${OS_OPTIONS} == *"|${INPUT_TARGET}|"* ]]; then
+  TARGET=${INPUT_TARGET}
+else
+  echo "Unknown build target '${INPUT_TARGET}', default to linux"
+  TARGET="linux"
+fi
+
+mkdir -p chromium/build/
+rm chromium/build/*
+cp -p chromium/${TARGET}/chromium.zip chromium/build/chromium.zip
+
+OUT=".build/${TARGET}/${EXE_NAME}"
+if [ "$TARGET" = "windows" ]
+then
+  OUT="${OUT}.exe"
+fi
+
+echo "Building against ${TARGET} to the file ${OUT}"
+
+T=$(date +%s%N)
+GOOS=${TARGET} GOARCH=amd64 go build \
+  -ldflags="-X 'main.build_time=${T}'" \
+  -o ${OUT} .
+
+echo "Done"

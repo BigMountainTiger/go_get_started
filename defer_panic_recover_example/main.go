@@ -24,6 +24,15 @@ func main() {
 
 	defer func() {
 		fmt.Println()
+		r := recover()
+
+		if r == nil {
+			log.Printf("recover() has been called by previous defer function, so nil is received")
+		}
+	}()
+
+	defer func() {
+		fmt.Println()
 		if r := recover(); r != nil {
 			log.Printf("Recovered from panic - detail: %s\n", r)
 		}
@@ -48,6 +57,10 @@ func main() {
 		log.Println()
 		log.Println("Defer No.2")
 		log.Panicln("Panic Here in No.2")
+
+		// The code after panic will not be executed
+		log.Println("-------------------------")
+		log.Println("This will not be executed")
 	}()
 
 	defer func() {

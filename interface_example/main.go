@@ -8,8 +8,9 @@ func main() {
 		type_assertions()
 		function_pointer()
 		struct_example()
+		interface_example()
 	}
 
-	interface_example()
+	polymorphism_example()
 
 }

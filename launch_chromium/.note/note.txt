@@ -1,0 +1,9 @@
+https://www.chromium.org/chromium-projects/
+https://www.chromium.org/getting-involved/download-chromium/
+
+1. Download the zip -> unzip it
+2. Change the name of the resulting directory to chromium
+3. Rezip it to a zip file named "chromium.zip" => zip -r chromium.zip chromium/
+4. Add the chromium.zip to the chromium directory in the project for the corresponding OS
+
+The .scripts/build file will copy the zip file to the "build" directory before "go build"

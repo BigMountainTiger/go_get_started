@@ -1,0 +1,12 @@
+#!/bin/bash
+
+SHARED="/media/sf_Shared-folder"
+DEST="${SHARED}/build"
+
+rm -Rf ${DEST}
+
+cp -R .build ${DEST}
+
+echo "Copied the build to ${DEST}"
+echo
+find ${DEST} -type f

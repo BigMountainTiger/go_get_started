@@ -5,8 +5,7 @@
 			"path": ".script"
 		},
 		{
-			"name": "note",
-			"path": "note"
+			"path": ".note"
 		},
 		{
 			"name": "calling_c_code",
@@ -17,32 +16,39 @@
 			"path": "cli_cobra_example"
 		},
 		{
-			"name": "dynamo_client_example",
-			"path": "dynamo_client_example"
+			"name": "default_variable_values",
+			"path": "default_variable_values"
 		},
 		{
-			"name": "web_service_gin",
-			"path": "web_service_gin"
-		},
-		{
-			"name": "http_client_example",
-			"path": "http_client_example"
-		},
-		{
-			"name": "web_fasthttp",
-			"path": "web_fasthttp"
+			"name": "defer_fatal",
+			"path": "defer_fatal"
 		},
 		{
 			"name": "defer_panic_recover_example",
 			"path": "defer_panic_recover_example"
 		},
 		{
+			"name": "dynamo_client_example",
+			"path": "dynamo_client_example"
+		},
+		{
+			"name": "http_client_example",
+			"path": "http_client_example"
+		},
+		{
 			"name": "test_example",
 			"path": "test_example"
 		},
 		{
+			"name": "init_example",
+			"path": "init_example"
+		},
+		{
 			"name": "interface_example",
 			"path": "interface_example"
+		},
+		{
+			"path": "iot_example"
 		},
 		{
 			"name": "goroutine_example",
@@ -57,11 +63,43 @@
 			"path": "launch_browser"
 		},
 		{
+			"name": "launch_chromium",
+			"path": "launch_chromium"
+		},
+		{
+			"name": "make_vs_new",
+			"path": "make_vs_new"
+		},
+		{
 			"name": "msitools_example",
 			"path": "msitools_example"
 		},
 		{
+			"name": "oauth2_example",
 			"path": "oauth2_example"
+		},
+		{
+			"name": "package_example",
+			"path": "package_example"
+		},
+		{
+			"name": "pointer_example",
+			"path": "pointer_example"
+		},
+		{
+			"name": "struct_assignment_is_copy_example",
+			"path": "struct_assignment_is_copy_example"
+		},
+		{
+			"name": "web_fasthttp",
+			"path": "web_fasthttp"
+		},
+		{
+			"name": "web_service_gin",
+			"path": "web_service_gin"
+		},
+		{
+			"path": "workspace_example"
 		}
 	],
 	"settings": {
