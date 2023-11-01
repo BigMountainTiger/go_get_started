@@ -1,0 +1,7 @@
+go 1.21.3
+
+use (
+	./defer_fatal
+	./defer_panic_recover_example
+	./defer_modify_return_value
+)

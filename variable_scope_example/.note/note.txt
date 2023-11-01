@@ -1,0 +1,18 @@
+https://www.geeksforgeeks.org/scope-of-variables-in-go/#
+
+Golang is block structured
+https://go.dev/ref/spec#Blocks
+
+Local variables
+variables declared in a function or a block (curly braces)
+
+
+Global variables - variables declared out of a function
+
+The variables which are defined outside of a function or a block is termed as Global variables.
+These are available throughout the lifetime of a program.
+These are declared at the top of the program outside all of the functions or blocks.
+These can be accessed from any portion of the program
+
+
+Global variables in another package

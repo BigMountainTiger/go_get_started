@@ -1,0 +1,14 @@
+https://go.dev/doc/tutorial/workspaces
+
+A workspace manages multiple golang modules.
+VSCode allows multiple modules in a folder if managed by a workspace
+
+common commands:
+go work init "directory_name"
+go work use "directory_name"
+
+To reference a local golang module use command:
+go mod edit -replace=song.com/pkg_library=../pkg_library
+
+It adds a line in the go.mod file
+replace song.com/pkg_library => ../pkg_library

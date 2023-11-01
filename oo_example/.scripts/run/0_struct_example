@@ -1,0 +1,3 @@
+#!/bin/bash
+
+go run ./0_struct_example

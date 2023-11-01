@@ -54,7 +54,7 @@ func main() {
 
 	fmt.Println()
 
-	fmt.Println("0. Make retures a slice, no an array, slice is pointer in nature")
+	fmt.Println("0. Make retures a slice, not an array, slice is pointer in nature")
 
 	fmt.Println("1. Make retures a type, new returns a pointer")
 

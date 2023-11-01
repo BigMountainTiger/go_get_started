@@ -1,0 +1,7 @@
+go 1.21.3
+
+use (
+	./0_struct_example
+	./1_struct_receiver_example
+	./miscellaneous
+)

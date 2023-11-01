@@ -1,0 +1,3 @@
+#!/bin/bash
+
+go run ./defer_panic_recover_example

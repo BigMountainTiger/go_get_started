@@ -20,16 +20,11 @@
 			"path": "default_variable_values"
 		},
 		{
-			"name": "defer_fatal",
-			"path": "defer_fatal"
-		},
-		{
-			"name": "defer_panic_recover_example",
-			"path": "defer_panic_recover_example"
-		},
-		{
 			"name": "dynamo_client_example",
 			"path": "dynamo_client_example"
+		},
+		{
+			"path": "defer_examples"
 		},
 		{
 			"name": "http_client_example",
@@ -42,10 +37,6 @@
 		{
 			"name": "init_example",
 			"path": "init_example"
-		},
-		{
-			"name": "interface_example",
-			"path": "interface_example"
 		},
 		{
 			"path": "iot_example"
@@ -79,6 +70,9 @@
 			"path": "oauth2_example"
 		},
 		{
+			"path": "oo_example"
+		},
+		{
 			"name": "package_example",
 			"path": "package_example"
 		},
@@ -91,6 +85,9 @@
 			"path": "struct_assignment_is_copy_example"
 		},
 		{
+			"path": "variable_scope_example"
+		},
+		{
 			"name": "web_fasthttp",
 			"path": "web_fasthttp"
 		},
@@ -100,6 +97,9 @@
 		},
 		{
 			"path": "workspace_example"
+		},
+		{
+			"path": "A_playground"
 		}
 	],
 	"settings": {
