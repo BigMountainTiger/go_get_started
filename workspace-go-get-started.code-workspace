@@ -106,6 +106,9 @@
 		"files.exclude": {
 			"**/.git": true,
 			"**/bin": true
-		}
+		},
+		"terminal.integrated.fontSize": 16,
+		"terminal.integrated.fontFamily": "Ubuntu mono",
+		"go.toolsManagement.autoUpdate": true,
 	}
 }

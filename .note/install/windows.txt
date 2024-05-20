@@ -1,0 +1,9 @@
+Download - https://go.dev/doc/install
+Archived versions - https://go.dev/dl/
+
+1. It is possible to download an installer, but I prefer to download the zip and unzip ot to a folder
+2. Add the bin folder to the user's PATH
+3. Add the GOBIN = GOPATH\bin to the user's PATH
+4. If different GOPROXY (by default => https://proxy.golang.org,direct) is needed, set the environment variable to a different proxy
+5. If non-default GOPROXY is used, it may also need to set environment variable GOSUMDB=off
+    - https://goproxy.io/docs/GOSUMDB-env.html
