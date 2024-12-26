@@ -1,0 +1,3 @@
+#!/bin/bash
+
+go run ./2_interface_example

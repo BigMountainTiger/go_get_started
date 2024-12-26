@@ -1,0 +1,41 @@
+It is possible to use apt to install golang - golang-go
+
+It is also possible to add PPA so we can install different versions
+    - https://launchpad.net/%7Elongsleep/+archive/ubuntu/golang-backports 
+
+But golang documentation recommands to download from go website
+------------------------------------------------------------------------------
+1. Golang documentation recommend to download the zip and extract the content
+Download - https://go.dev/doc/install
+Archived versions - https://go.dev/dl/
+
+2. In linux -
+Unzip the package and add the bin locaton to the PATH variable
+- in .profile
+PATH="/home/song/Development/golang/go/bin:$PATH" - Check step 5 => $(go env GOPATH)
+
+3. Check version -
+which go
+go version
+
+4. GOROOT/GOPATH/GOBIN -
+It is normally good to keep the default
+go env GOROOT
+go env GOPATH
+go env GOBIN -> This normally not set, utilities installed to GOPATH/bin
+
+GOROOT - The directory where the go executable is placed
+GOPATH - The directory where the go workspace - default = "~/go"
+GOBIN - The directory where "go intall" command to install additional utilities, default GOPATH/bin
+
+5. Add the GOPATH/bin to the PATH variable, so we can run the go utilities
+- in .profile
+PATH="$(go env GOPATH)/bin:$PATH"
+
+6. GOPROXY
+go env GOPROXY -> by default = https://proxy.golang.org,direct
+If use a different proxy, need to set this environment variable
+
+7. GOSUMDB
+If non-default GOPROXY is used, it may also need to set environment variable GOSUMDB=off
+    - https://goproxy.io/docs/GOSUMDB-env.html
