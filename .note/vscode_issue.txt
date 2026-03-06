@@ -1,0 +1,8 @@
+golang vscode plugin only supports go modules / workspaces in top level folders
+
+-----------------------------------------------------------------
+1. In order to put go modules / workspaces into subfolders, need to add these folders in a VSCODE workspace
+    - see the "workspace-go-get-started.code-workspace" file
+    
+2. A golong workspace can have multiple golang modules in its subfolders
+    - see the workspace_example

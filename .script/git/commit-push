@@ -3,3 +3,7 @@
 git reset --soft HEAD~
 git add-commit -m "Updated the go_get_started"
 git push -f
+
+echo -e '\nWait for a second...'
+sleep 1
+git log -2

@@ -1,5 +1,0 @@
-https://go.dev/doc/gopath_code
-ttps://go.dev/doc/tutorial/
-
-longsleep
-https://launchpad.net/~longsleep/+archive/ubuntu/golang-backports

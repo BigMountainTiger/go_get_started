@@ -3,7 +3,7 @@ package p2
 import (
 	"fmt"
 
-	"song.com/go_get_started/package_example/packages/p2/final"
+	"song.com/go_get_started/package_example/miscellaneous/packages/p2/final"
 )
 
 func From_p2() {
