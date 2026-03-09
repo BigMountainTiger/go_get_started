@@ -1,0 +1,32 @@
+package
+-------------------------------------------------------------
+1. Every Go source file must begin with a package declaration
+2. All go files in the same directory must belong to the same package
+3. The package statement must be the first line in every Go file
+4. Variables, functions, types, and constants in the same package are automatically accessible within the package
+
+
+main package
+-------------------------------------------------------------
+1. The package main is special
+2. It defines a standalone executable program, and the execution of the program starts with the main() function within this package
+3. For small programs, the main package is often places in the root directory of the project (alongside the go.mod file)
+
+
+multiple main functions in a module
+-------------------------------------------------------------
+1. It is possible to have multiple main functions in a module
+2. They are typically placed in the "cmd" directory
+3. __
+/project-root
+├── go.mod
+├── internal/
+├── pkg/
+└── cmd/
+    ├── program1/
+    │   └── main.go
+    └── program2/
+        └── main.go
+4. __
+go run ./cmd/program1/
+go build ./cmd/program2/

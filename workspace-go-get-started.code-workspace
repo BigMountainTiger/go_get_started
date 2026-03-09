@@ -73,8 +73,8 @@
 			"path": "oo_example"
 		},
 		{
-			"name": "package_example",
-			"path": "package_example"
+			"name": "mod_and_package",
+			"path": "mod_and_package"
 		},
 		{
 			"name": "pointer_example",

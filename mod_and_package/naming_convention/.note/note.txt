@@ -1,0 +1,6 @@
+----------------------------------------
+This project shows that the name of the package is allowed different from the directory name
+
+
+----------------------------------------
+Although this is allowed, it is not recommended

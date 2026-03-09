@@ -1,0 +1,18 @@
+1. It is a STRONG convention that a package's name should match the name of its source directory
+2. A single directory can contain only one package
+3. name should be lower case avoid to use "_" (I use "_" anyway so it is easier to read)
+
+
+--------------------------
+The import is just to tell golang the directory to find the package,
+so it is a STRONG convention that a package's name should match the name of its source directory
+
+
+--------------------------
+See the "naming_convention" project that the name of the package is different from the directory name
+
+
+--------------------------
+The alias must be used when
+1. Packages of the same name are imported into the same go file
+2. A package with a different name from the directory contains it is imported into the same go file
