@@ -1,0 +1,17 @@
+The "go.mod" file has the following:
+
+1. module name
+2. minimal go version required
+3. Required dependent modules
+4. If local (workspace) modules are used, the "replace" sentence is needed
+
+
+Useful commands:
+-------------------------------------------
+go mod init <name> - Creates a new go.mod file to start tracking dependencies.
+go get <path> - Fetches a dependency and adds it to go.mod.
+go mod tidy	- Synchronizes go.mod with the imports in your source code.
+go list -m all - Lists the current module and all its dependencies.
+
+If you are trying to install a tool/executable (like a linter) without adding it to your project's go.mod,
+use go install <path>@latest instead.

@@ -2,5 +2,6 @@ go 1.25.0
 
 use (
 	./miscellaneous
+	./mod_example
 	./naming_convention
 )

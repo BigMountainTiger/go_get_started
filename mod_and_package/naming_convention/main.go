@@ -6,7 +6,7 @@ import (
 	// the package name is different from the folder name
 	// It is allowed but not recommended, the strong convention is to have the package name the same as the folder name
 	// The import path is based on "the module name" / "the folder structure"
-	any_package "song.com/go_get_started/package_example/naming_convention/folder1"
+	any_package "song.com/go_get_started/mod_and_package/naming_convention/folder1"
 )
 
 func main() {

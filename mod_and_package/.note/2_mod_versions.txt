@@ -1,0 +1,22 @@
+There are 2 versions in a mod file
+---------------------------------------------------
+1. The minimal golang version to compile the module
+2. If the module has external required modules, the version of each external module version
+
+
+
+If the module is intended to be used by other modules
+---------------------------------------------------
+GITGUB is used to control the versions of the module
+TAG the GIT commit by a version - v(Major).(Minor).(Patch)
+
+Tag a module to be used by others - 
+git tag -a v1.0.0 -m "Release version 1.0.0"
+
+When used by a module - 
+require (
+	github.com/aws/aws-sdk-go v1.44.80
+)
+
+
+
