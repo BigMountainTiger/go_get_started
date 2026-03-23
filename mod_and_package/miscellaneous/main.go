@@ -3,10 +3,10 @@ package main
 import (
 	"fmt"
 
-	p1 "song.com/go_get_started/package_example/miscellaneous/packages/p1/final"
-	"song.com/go_get_started/package_example/miscellaneous/packages/p2"
-	p2_final "song.com/go_get_started/package_example/miscellaneous/packages/p2/final"
-	"song.com/go_get_started/package_example/miscellaneous/packages/p3"
+	p1 "song.com/go_get_started/mod_and_package/miscellaneous/packages/p1/final"
+	"song.com/go_get_started/mod_and_package/miscellaneous/packages/p2"
+	p2_final "song.com/go_get_started/mod_and_package/miscellaneous/packages/p2/final"
+	"song.com/go_get_started/mod_and_package/miscellaneous/packages/p3"
 )
 
 func main() {

@@ -1,0 +1,2 @@
+& => Get the pointer
+* => Get the value from the pointer (dereference)
